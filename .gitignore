@@ -1,0 +1,24 @@
+# Publish allowlist: never commit runtime topology, shared secrets, binaries or review artifacts.
+/*
+!/.gitignore
+!/README.md
+!/ARCHITECTURE.md
+!/go.mod
+!/go.sum
+!/cmd/
+!/cmd/**
+!/internal/
+!/internal/**
+!/web/
+!/web/**
+
+# Local copies and generated files within published directories.
+*.bak*
+*.tmp
+*.log
+*.db
+*.sqlite*
+*.pem
+*.key
+*.env*
+.DS_Store
